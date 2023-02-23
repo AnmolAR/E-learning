@@ -1,0 +1,74 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E learning </title>
+<link rel="stylesheet" href="style.css">
+<link href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+ 
+</head>
+<body>
+<section class="header">
+  <nav>
+  <a href="index.html"><img src="image/E-learning.png"></a>
+    <div class="link" id="navlink">
+     <i class="fa fa-window-close" onclick="hidemenu()"></i>
+     <ul>
+    <li><a href="index.html">Home</li></a></li>
+    <li><a href="courses.html"><li>Courses</a><li>
+    <li><a href="contact.html"><li>Contact us</a></li>
+    <li><a href="About.html"><li>About us</a><li>
+    </ul>
+    </div>
+    <i class="fa fa-bars" onclick="showmenu()"></i>
+    </nav>
+    <div class="textbox">
+    <h1>Welcome to E-learning </h1>
+    <p>Complete E-learning portal</p><br>
+     <a href="form.html" class="register-button" onclick="showform()"> Register Here!!</a>
+      </div>
+      
+      <div class="formbox" id="formbox">
+          <i class="fa fa-window-close" onclick="hideform()"></i>
+      <h3>Register Here</h3>
+      <div class="formcontainer">
+        <div class="formcol">
+          Username<input type="text"><br>
+          Email<input type="text"><br>
+          Password<input type="text"><br>
+          Re-Password<input type="text"><br><br>
+          <input type="submit">
+          </div>
+         <div class="formcol">
+           
+           <div class="formcolright">
+             Quick Sign-Up<br>
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-twitter"></i>
+          </div>
+    </div>
+    </div>
+    </div>
+    <script>
+      var navlink = document.getElementById("navlink");
+       function showmenu()
+      {
+        navlink.style.right="0";
+      }
+      function hidemenu()
+      {
+        navlink.style.right="-200px";
+     }
+      
+      var formbox = document.getElementById("formbox");
+      function showform()
+      {
+        formbox.style.display= "block";
+      }
+      function hideform()
+      {
+        formbox.style.display="none";
+      }
+    </script>
+  </body>
+</html>

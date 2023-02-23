@@ -1,0 +1,137 @@
+*{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+.second-text{
+  padding-top: 7%;
+  color: white;
+  font-family: "Arial black";
+  text-align: center;
+  font-size: 65px;
+  text-shadow: 3px 3px black;
+  background-color: #424874;
+  margin-bottom: 0%;
+}
+
+.second-text2{
+  padding-top: 2%;
+  color: yellow;
+  font-family: "Arial black";
+  text-align: center;
+  font-size: 25px;
+  text-shadow: 1px 1px black;
+  padding-left: 6%;
+  padding-right: 6%;
+  background-color: #424874;
+  margin-bottom: 0%;
+
+}
+
+
+#about-page{
+  display: flex;
+  align-items: center;
+  min-height: 80vh;
+  background-color: #424874;
+}
+
+.grid{  
+  padding-top: 4%;
+  display: grid;
+  width: 114em;
+  grid-gap:6rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  align-items: start;
+}
+
+.grid-item{
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+  background-color: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rbga(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.grid-item:hover{
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rbga(0, 0, 0, 0.5);
+}
+
+.card-img{
+  display: block;
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+
+}
+
+.card-content{
+  padding: 3rem;
+}
+
+.card-header{
+  text-align: center;
+  font-family: "Arial Black";
+  font-size: 2rem;
+  color: white;
+  text-shadow: 1px 1px black;
+  margin-bottom: 0.5rem;
+  background-color: #3a3f6a;
+  margin-left: 0rem;
+}
+
+.card-text1{
+  font-family: sans-serif;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  text-align: left;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  color:#3d3d3d;
+  margin-bottom: 1.5rem;
+}
+
+.card-btn{
+  display: block;
+  width:100%;
+  padding: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+  color: #3363ff;
+  background-color: #d8e0fd;
+  border: none;
+  border-radius: 0.4rem;
+  transition: 0.2s;
+  cursor:pointer;
+  letter-spacing: 0.1rem;
+}
+
+.card-btn span{
+  margin-left: 1rem;
+  transition: 0.2s;
+}
+
+.card-btn:hover,
+.card-btn:active{
+  background-color: #c2cffc;
+}
+
+.card-btn:hover span,
+.card-btn:active span{
+  margin-left: 1.5rem;
+}
+
+.iframe{
+  padding-top: 4rem;
+  background-color: #424874;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
